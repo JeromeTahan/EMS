@@ -144,21 +144,20 @@
   }
   
   .video-container {
-    display: inline-block;
-    background: green;
-    padding: 4px; /* Green border padding */
+    position: relative;
+    width: 100%; /* Full width on smaller screens */
+    max-width: 800px; /* Limit maximum width on larger screens */
+    height: auto;
+    margin: 20px auto;
+    border: 4px solid green;
     border-radius: 8px;
-    max-width: 1000px;
-    margin-left: 80px;
-    margin-right: 80px;
 }
 
 .video-container video {
-    display: block;
     width: 100%;
-    height: 100%;
+    height: auto;
+    display: block;
     border-radius: 8px;
-    
 }
 
 
