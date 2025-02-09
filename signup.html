@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isla Virginia - Sign Up</title>
+    <link rel="stylesheet" href="signup.css">
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <div class="left-section">
+            <img src="logo.png" alt="Isla Virginia Logo" class="logo">
+        </div>
+        <div class="right-section">
+            <h2>Create Account</h2>
+            
+            <form id="signupForm" action="#" method="POST">
+                <div class="input-group">
+                    <span class="icon"><i class="fa-solid fa-user"></i></span>
+                    <input type="text" placeholder="Username" name="username" required>
+                </div>
+                
+                <div class="input-group">
+                    <span class="icon"><i class="fas fa-envelope"></i></span>
+                    <input type="email" placeholder="Email" name="email" required>
+                </div>
+                
+                <div class="input-group">
+                    <span class="icon"><i class="fas fa-lock"></i></span>
+                    <input type="password" placeholder="Password" name="password" required>
+                </div>
+                
+                <div class="input-group">
+                    <span class="icon"><i class="fas fa-lock"></i></span>
+                    <input type="password" placeholder="Confirm Password" name="confirm_password" required>
+                </div>
+                
+                <div class="btn-container">
+                    <button class="btn" type="submit">Create Account</button>
+                </div>
+            </form>
+            
+
+            <p class="login-link">Already have an account? <a href="login.html">Log In</a></p>
+        </div>
+    </div>
+    <script src="signup.js"></script>
+</body>
+</html>

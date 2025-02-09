@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="postjob_admin.css">
+  <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <title>Post a Job Page</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="sidebar">
+      <h2>ISLA VIRGINIA <i class="fas fa-times close-sidebar"></i></h2>
+      
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="postjob_admin.html">Post a Job</a></li>
+        <li><a href="view_jobpost.html">View Job Post</a></li>
+        <li><a href="application_progress.html">Application Progress</a></li>
+        <li><a href="notification.html">Notification Page</a></li>
+        <li><a href="about.html">About us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="login.html">Log out</a></li>
+      </ul>
+    </div>
+
+    <div class="main_content">
+      <div class="header">
+        <div class="header-left">
+          <div class="hamburger">
+            <i class="fas fa-bars"></i>
+          </div>
+        </div>
+        <div class="greeting">Hi Name!</div>
+      </div>
+
+      <div class="container">
+        <div class="job-form-container">
+            
+            <form>
+                <label for="jobTitle">Job Title</label>
+                <input type="text" id="jobTitle" name="jobTitle" required>
+    
+                <label for="description">Description</label>
+                <textarea id="description" name="description" required></textarea>
+    
+                <label for="qualifications">Qualifications</label>
+                <textarea id="qualifications" name="qualifications" required></textarea>
+    
+                <div class="job-details">
+                    <div>
+                        <label for="salary">Salary</label>
+                        <input type="number" id="salary" name="salary" min="0" step="0.01" required>
+
+                    </div>
+                    <div>
+                        <label for="location">Location</label>
+                        <select id="location" name="location" required>
+                        <option value="">Select Location</option>
+                        <option value="Isla Verginia 1">Isla Verginia 1</option>
+                        <option value="Isla Verginia 2">Isla Verginia 2</option>
+                        <option value="Isla Verginia 3">Isla Verginia 3</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="deadline">Application Deadline</label>
+                        <input type="date" id="deadline" name="deadline" required>
+                    </div>
+                </div>
+    
+                <div class="buttons">
+                    <button type="submit">Save</button>
+                    <button type="reset">Edit</button>
+                </div>
+            </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="postjob_admin.js"></script>
+</body>
+</html>

@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Josefin Sans', sans-serif;
+  }
+  
+  body {
+    background-color: #f3f5f9;
+  }
+  
+  .wrapper {
+    display: flex;
+    position: relative;
+    height: 100vh;
+  }
+  
+  .sidebar {
+    width: 270px;
+    height: 100vh;
+    background: #413f3f;
+    padding: 15px 0;
+    position: fixed;
+    left: -270px;
+    transition: all 0.3s ease;
+    z-index: 1000;
+  }
+  
+  .sidebar.visible {
+    left: 0;
+  }
+  
+  .sidebar h2 {
+    color: #fff;
+    text-transform: uppercase;
+    text-align: left;
+    padding: 0 20px;
+    font-size: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .sidebar h2 .close-sidebar {
+    cursor: pointer;
+    color: #fff;
+    font-size: 1.5em;
+    padding-left: 10px;
+    margin-right: 10px;
+    padding-bottom: 5px;
+    margin-top: 0px;
+  }
+  
+  .sidebar ul li {
+    padding: 20px;
+    padding-left: 35px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    font-size: 17px;
+  }
+  
+  .sidebar ul li a {
+    color: white;
+    display: block;
+  }
+
+  .sidebar ul li a.active {
+    background-color: #f4e1c7;
+    color: #413f3f;
+  }
+  
+  .sidebar ul li.active {
+    background-color: #ffffff;
+    color: #413f3f;
+  }
+  .sidebar ul li.active a {
+    color: #413f3f;
+  }
+  
+  
+  .header {
+    background: #0b5f09;
+    color: white;
+    padding: 18.7px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .header-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .hamburger {
+    font-size: 24px;
+    cursor: pointer;
+    margin-right: 15px;
+  }
+  
+  .greeting {
+    font-size: 1.2em;
+  }
+  
+  .main_content {
+    width: 100%;
+    margin-left: 0;
+    transition: margin-left 0.3s ease;
+  }
+  
+  .main_content.shifted {
+    margin-left: 270px;
+  }
+  
+  .container {
+    width: 80%;
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  
+  .container {
+    width: 80%;
+    margin: 40px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+
+  .container1 {
+    max-width: 800px;
+    margin: auto;
+}
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    
+}
+.box {
+    border: 2px solid rgb(0, 0, 0);
+    padding: 20px;
+    text-align: left;
+    border-radius: 5px;
+    line-height: 1.2;
+}
+.box2 {
+    border: 2px solid rgb(0, 0, 0);
+    padding: 20px;
+    text-align: left;
+    border-radius: 5px;
+    line-height: 1.2;
+    max-width: 800px;
+    margin: auto;
+  
+}
+
+.box2 p {
+  margin-bottom: 20px;
+}
+.image {
+    width: 300px;
+    height: 300px;
+    border: 6px solid green;
+    border-radius: 50%;
+    overflow: hidden;
+    display: inline-block;
+    margin-top: 25px;
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    
+}
+
+.image2 {
+    width: 300px;
+    height: 300px;
+    border: 6px solid green;
+    border-radius: 50%;
+    overflow: hidden;
+    display: inline-block;
+    
+}
+  
+
+.branches {
+  display: flex;
+  justify-content: center;
+  gap: 100px; /* Adds spacing between the branches */
+  margin-top: 20px; /* Moves everything down */
+}
+
+.branch {
+  display: inline-block;
+  text-align: center;
+  margin: 15px;
+}
+
+.circle {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: block;
+  margin: 0 auto;
+  border: 4px solid green;
+}
+
+.circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  
+}
+
+
+
+.branch p {
+  margin-top: 10px;
+  font-weight: bold;
+  color: black;
+  margin-bottom: 20px;
+}
+
+.selected .circle {
+  border: 3px solid #8a2be2; /* Purple border for selection */
+  box-shadow: 0 0 5px #8a2be2;
+}
+  
+
+@media (max-height: 500px){
+  .social_media{
+    display: none !important;
+  }
+}
+
+.header {
+    background: #0b5f09;
+    color: white;
+    padding:18.7px;
+    text-align: left;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+.header img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.container {
+    width: 80%;
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.form-section {
+    border: 2px solid #413f3f;
+    padding: 15px;
+    background: #f4e1c7;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+.form-section h3 {
+    margin-top: 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+.form-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.form-group div {
+    flex: 1;
+    min-width: 200px;
+}
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+input, select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Address Details */
+.form-section:nth-child(2) {
+    border: 2px solid #413f3f;
+    background: #f4e1c7;
+}
+
+/* Education and Work */
+.form-section:nth-child(3) {
+    background: #f8d5b8;
+}
+
+/* Buttons */
+.form-buttons {
+    text-align: center;
+    margin-top: 20px;
+}
+.form-buttons button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.form-buttons button:nth-child(1) {
+    background: #6c757d;
+    color: white;
+}
+.form-buttons button:nth-child(2) {
+    background: #28a745;
+    color: white;
+}
+.form-buttons button:nth-child(3) {
+    background: #ffc107;
+    color: black;
+}
+
+.form-buttons button:nth-child(4) {
+    background: #ff0713;
+    color: black;
+}
