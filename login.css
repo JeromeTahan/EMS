@@ -13,6 +13,7 @@ body {
     align-items: center;
     height: 100vh;
     background-color: #e8f5e9;
+    padding: 10px;
 }
 
 .container {
@@ -22,6 +23,8 @@ body {
     border-radius: 10px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
     width: 700px;
+    max-width: 100%; /* Adjust width for smaller screens */
+    flex-wrap: wrap; /* Allow sections to wrap */
 }
 
 .left-section {
@@ -125,6 +128,95 @@ body {
 }
 
 /* Signup link */
+.signup-link {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.signup-link a {
+    color: #008000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.signup-link a:hover {
+    text-decoration: underline;
+    color: #008000;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        border: none;
+    }
+
+    .left-section {
+        order: -1;
+        border-right: none;
+        width: 100%;
+        padding: 0;
+    }
+
+    .logo {
+        margin: 0 auto;
+        max-width: 180px;
+        max-height: 120px;
+    }
+}
+
+.right-section h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #008000;
+}
+
+.input-group {
+    position: relative;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.input-group .icon {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: gray;
+    font-size: 14px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px 12px 12px 40px;
+    border: 2px solid #ddd;
+    border-radius: 20px;
+    outline: none;
+    font-size: 14px;
+}
+
+.input-group input:focus {
+    border-color: #008000;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.btn {
+    background: green;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #005900;
+}
+
 .signup-link {
     margin-top: 10px;
     font-size: 14px;
