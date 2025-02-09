@@ -170,6 +170,7 @@
     cursor: pointer;
     display: flex;
     justify-content: space-between;
+    color: black;
 }
 .faq-answer {
     display: none;
