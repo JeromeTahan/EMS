@@ -172,13 +172,14 @@ h2 {
   margin-bottom: 20px;
 }
 .image {
-    width: 300px;
-    height: 300px;
-    border: 6px solid green;
-    border-radius: 50%;
-    overflow: hidden;
-    display: inline-block;
-    margin-top: 25px;
+  width: 100%;
+  max-width: 300px;
+  aspect-ratio: 1; /* Maintain square shape */
+  border: 6px solid green;
+  border-radius: 50%;
+  overflow: hidden;
+  display: inline-block;
+  margin-top: 25px;
 }
 
 .image img {
@@ -189,21 +190,12 @@ h2 {
     
 }
 
-.image2 {
-    width: 300px;
-    height: 300px;
-    border: 6px solid green;
-    border-radius: 50%;
-    overflow: hidden;
-    display: inline-block;
-    
-}
   
 
 .branches {
     display: flex;
     justify-content: center;
-    gap: 50px; /* Reduced gap for cleaner look */
+    gap: 70px; /* Reduced gap for cleaner look */
     flex-wrap: wrap;
 }
 
@@ -225,9 +217,9 @@ h2 {
 }
 
 .circle img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
 
@@ -245,6 +237,8 @@ h2 {
   box-shadow: 0 0 5px #8a2be2;
 }
   
+
+
 
 @media (max-height: 500px){
   .social_media{
@@ -349,3 +343,4 @@ input, select {
     background: #ff0713;
     color: black;
 }
+
